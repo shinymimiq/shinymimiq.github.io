@@ -7,7 +7,7 @@ title: Keep Simple
 subtitle:
 description:
 author: Tony Liu
-language:
+language: zh-Hans
 timezone:
 
 # URL
@@ -68,5 +68,22 @@ theme: next
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/mrtoniliu/mrtoniliu.github.io.git
+  repo: git@github.com:mrtoniliu/mrtoniliu.github.io.git
   branch: master
+
+
+# Social account
+social:
+  GitHub: https://github.com/mrtoniliu
+  Twitter: https://twitter.com/mrtoniliu
+
+# Creative Commons 4.0 International License.
+# http://creativecommons.org/
+# Available: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
+creative_commons: by-nc-sa
+
+# Avatar
+avatar: https://en.gravatar.com/userimage/49458964/ef2b741c9388bce9873c303211d7cd24.png
+
+# Since
+since: 2015
