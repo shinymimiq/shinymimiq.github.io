@@ -62,13 +62,14 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 plugins:
-  - hexo-generator-feed
+- hexo-generator-feed
 ## Themes: http://hexo.io/themes/
 theme: next
 
 # RSS Feed
 feed:
   type: rss2
+  path: rss2.xml
   limit: 0
 
 # Deployment
