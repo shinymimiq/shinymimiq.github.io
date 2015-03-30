@@ -34,7 +34,15 @@ More codes here:
         return 0;
     }
 
-And for the math mode: $x^2+3x+1=4$
+And for the math mode: $x^2+3x+1=4$,
+
+Some more complicate ${n! \over k!(n-k)!} = {n \choose k}$
+
+Production? Yes: $$\prod_{i=0}^n \frac{1}{i^2}$$
+
+Limits? Yes: $$\lim_{n \rightarrow +\infty} \frac{1}{n(n+1)}$$
+
+However, it seems doesn't support equations by default, need time to check how to enable it.
 
 ### headings
 
