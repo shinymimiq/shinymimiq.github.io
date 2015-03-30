@@ -1,6 +1,6 @@
 title: "Testing"
 date: 2015-03-30 13:44:17
-tags:
+tags: Test
 ---
 
 ## Just some testing
