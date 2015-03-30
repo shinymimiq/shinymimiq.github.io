@@ -4,11 +4,11 @@
 
 # Site
 title: Keep Simple
-subtitle:
+subtitle: 大道至简
 description:
 author: Tony Liu
-language: zh-Hans
-timezone:
+language: English
+timezone: 
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
