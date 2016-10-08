@@ -11,6 +11,7 @@ Here are some code snippst: `var myname = 'Tony Liu';`, `#define age 24;`
 
 More codes here:
 
+``` cpp
     #include<stdio.h>
 
     int main() {
@@ -33,6 +34,7 @@ More codes here:
         }
         return 0;
     }
+```
 
 And for the math mode: $x^2+3x+1=4$,
 
