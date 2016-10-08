@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Keep Simple</title>
+    <link>http://mrtoniliu.github.io/</link>
+    <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
+    
+    <description></description>
+    <pubDate>Sat, 08 Oct 2016 04:47:05 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>What is code</title>
+      <link>http://mrtoniliu.github.io/2015/06/16/What-is-code/</link>
+      <guid>http://mrtoniliu.github.io/2015/06/16/What-is-code/</guid>
+      <pubDate>Tue, 16 Jun 2015 06:15:31 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;Found a quite useful website to describe the basic knowledge about computer and programming.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.bloomberg.com/gra
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>Found a quite useful website to describe the basic knowledge about computer and programming.</p>
+<p><a href="http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/" target="_blank" rel="external">http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/</a></p>
+]]></content:encoded>
+      
+      <comments>http://mrtoniliu.github.io/2015/06/16/What-is-code/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Summary of Using Git</title>
+      <link>http://mrtoniliu.github.io/2015/04/27/SummaryofUsingGit/</link>
+      <guid>http://mrtoniliu.github.io/2015/04/27/SummaryofUsingGit/</guid>
+      <pubDate>Mon, 27 Apr 2015 10:20:08 GMT</pubDate>
+      <description>
+      
+        &lt;h2 id=&quot;Introduction&quot;&gt;&lt;a href=&quot;#Introduction&quot; class=&quot;headerlink&quot; title=&quot;Introduction&quot;&gt;&lt;/a&gt;Introduction&lt;/h2&gt;&lt;p&gt;I’ve been use git for several 
+      
+      </description>
+      
+      <content:encoded><![CDATA[<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>I’ve been use git for several times, starting from using GUI apps such as SourceTree or Tower on OS X. It works quite well, simple and strait forward. However, since I don’t have much more experience on complicate project, only familiar with basic concept of commit, checkout, branch and merge. Most of these are well done by these GUI application.</p>
+<p>When I switch to Linux in work, I have to learn more about git, especially for the command line usage.</p>
+<h2 id="Branches-and-Checkout"><a href="#Branches-and-Checkout" class="headerlink" title="Branches and Checkout"></a>Branches and Checkout</h2><p><code>git merge</code> and <code>git rebase</code> are two commands mainly used to put the changes from a branch to anther. For the difference between <code>merge</code> and <code>rebase</code>, there is a nicely written documents made by Atlassian.</p>
+<p>Normally the use command <code>git log</code> will show something like:</p>
+<pre><code>commit 7e05d686e0382446a0319ea33d60edaf51116aeb
+Author: tbsaunde &lt;tbsaunde@138bc75d-0d04-0410-961f-82ee72b054a4&gt;
+Date:   Thu Apr 30 02:08:05 2015 +0000
+
+    fixup libobjc&apos;s usage of PCC_BITFIELD_TYPE_MATTERS
+
+    libobjc/ChangeLog:
+
+        * encoding.c (objc_layout_structure_next_member): check value of
+        PCC_BITFIELD_TYPE_MATTERS instead of if it is defined.
+
+    git-svn-id: svn+ssh://gcc.gnu.org/svn/gcc/trunk@222605 138bc75d-0d04-0410-961f-82ee72b054a4
+</code></pre><p>or to simply it, use <code>git log --oneline</code>:</p>
+<pre><code>7e05d68 fixup libobjc&apos;s usage of PCC_BITFIELD_TYPE_MATTERS
+</code></pre><p>It is possible to create a branch using specific commit: <code>git checkout -b &lt;branch_name&gt; 7e05d68</code></p>
+<p>To switch between different branches, uses <code>git checkout &lt;branch_name&gt;</code> will be enough.</p>
+<h2 id="Stage-Commit-amp-Clean"><a href="#Stage-Commit-amp-Clean" class="headerlink" title="Stage Commit &amp; Clean"></a>Stage Commit &amp; Clean</h2><p>Stage and Commit are used to record the changes in the git repo.<br><code>git add .</code> or <code>git add -A</code> seems to be identical: to stage the changes.<br><code>git commit</code> will normally start vi to allow user type the commit message. If the commit message will be short, use <code>git commit -m &#39;&lt;commit message&gt;&#39;</code></p>
+<p>Some time we want to remove some untracked files, the <code>git clean</code> will be very helpful. Some time also can use <code>git rm</code> to manually specify the file to be removed. In addition, “.gitignore” is another way to ignore the files. </p>
+<h2 id="Status"><a href="#Status" class="headerlink" title="Status"></a>Status</h2><p>Use <code>git status</code> will show some brief information about the status of current git repo. It will be a good habit to use this command before some important command, such as pull, commit, merge. </p>
+<h2 id="Remote"><a href="#Remote" class="headerlink" title="Remote"></a>Remote</h2><p>The remote repo are quite useful when collaborate with other or using website such as Github. </p>
+<p>A quite useful workflow is that fork some repo from Github, then add the original repo as a upstream remote in the local repo, regularly pull the newest changes into local, so it will be more easier to deal with conflicts and track the upstream progress. </p>
+<p>Commands include: </p>
+<ul>
+<li><code>git remote -v</code> list the remote repo</li>
+<li><code>git remote add &lt;..&gt;</code> add a remote repo</li>
+<li><code>git remote remove</code> remove a remote repo</li>
+<li><code>git push -u | --set-upstream</code> will allow a branch to track the remote branch.</li>
+</ul>
+<h2 id="Submodules"><a href="#Submodules" class="headerlink" title="Submodules"></a>Submodules</h2><p>If want to use other git repo inside a repo, the submodules need to be used to avoid the conflicts between two repos. </p>
+<p>I’m not very familiar with submodule, thus this part will be completed later. </p>
+<h2 id="More-command"><a href="#More-command" class="headerlink" title="More command:"></a>More command:</h2><p>Some commands such as <code>git stash</code>, <code>git tag</code>, I don’t use them often, so they will also be introduced when I understand what they can do and how to use them. </p>
+]]></content:encoded>
+      
+      <comments>http://mrtoniliu.github.io/2015/04/27/SummaryofUsingGit/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Working Summary Q1 2015</title>
+      <link>http://mrtoniliu.github.io/2015/04/01/Working-Summary-Q1-2015/</link>
+      <guid>http://mrtoniliu.github.io/2015/04/01/Working-Summary-Q1-2015/</guid>
+      <pubDate>Wed, 01 Apr 2015 03:38:47 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;Since I may need to switch team, I can make a brief summary about what I’ve learned after first 3 months in ARM.&lt;/p&gt;
+&lt;h2 id=&quot;Background&quot;&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>Since I may need to switch team, I can make a brief summary about what I’ve learned after first 3 months in ARM.</p>
+<h2 id="Background"><a href="#Background" class="headerlink" title="Background"></a>Background</h2><p>I joined ARM from the beginning of Jan, 2015 as Graduate Compiler Engineering. ARM is a company selling its IP designs, or more generally, design chips. However, softwares designed for ARM platforms generally need to be compiled, in other words, translated to the machine code that ARM chips can understand. Thus, the compiler is what I suppose to work with ( but maybe not for future works ).</p>
+<h2 id="Works"><a href="#Works" class="headerlink" title="Works"></a>Works</h2><p>Our team is focusing on GCC development or optimisation for ARM Cortex-R/M chips. Daily tasks including building entire toolchain using trunk version of GCC, regression tests for different platforms, such as Cortex-M0, M4, M7, GCC bug fix, optimisations etc. We also will publish our toolchain for embedded developer who want to use gcc to build programmes for Cortex-R/M chips.</p>
+<p>Since I only worked less than 3 months, there are only quite simple tasks assigned to me, such as fixing a bug in test suites in GCC, validations the release version of our toolchain, design a small system to track the code size changes in Newlib ( A implementation of standard C library for embedded systems).</p>
+<h2 id="Techniques"><a href="#Techniques" class="headerlink" title="Techniques"></a>Techniques</h2><p>Our works are mainly done on the Linux (Ubuntu for most of us, maybe there is a guy using Debian).</p>
+<p>We have a lot script files ( Shell, Python, Perl ) to automate our daily workflow.</p>
+<p>The command such as grep, sed, awk are extremely useful daily work. I’m not yet enough familiar with these command.</p>
+<p>The VCS used in team is git, it also are very very useful during fixing bugs in GCC and testing, because it will take quite a lot time to build entire GCC even on our i7 desktops.</p>
+<p>We use CI as our test and release strategy, uses Jenkins as the tool. Actually I have the plan to switch the building, release framework to Buildbot as HQ is using such tool.</p>
+<p>As mentioned before, I was assigned the project to design a small system to track the code size changes in Newlib and some benchmarks results. We uses Tableau as the front end to visualise quite a lot data. In such project, I wrote a Python script mainly generating a .csv file which contains all raw data required. Then another Python script to convert to the required JSON files for the data server. To be honest, there are quite lots of enhancement can be make for there python scripts.</p>
+<h2 id="Future"><a href="#Future" class="headerlink" title="Future"></a>Future</h2><p>New team and new project is waiting. Maybe more C++ working, even some SystemC. Not sure yet.</p>
+]]></content:encoded>
+      
+      <comments>http://mrtoniliu.github.io/2015/04/01/Working-Summary-Q1-2015/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>2015 Annual Plan</title>
+      <link>http://mrtoniliu.github.io/2015/03/31/2015-Annual-Plan/</link>
+      <guid>http://mrtoniliu.github.io/2015/03/31/2015-Annual-Plan/</guid>
+      <pubDate>Tue, 31 Mar 2015 01:41:51 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;&lt;code&gt;This article was originally written in January&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Original-Plan&quot;&gt;&lt;a href=&quot;#Original-Plan&quot; class=&quot;headerlink&quot; title=
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p><code>This article was originally written in January</code></p>
+<h2 id="Original-Plan"><a href="#Original-Plan" class="headerlink" title="Original Plan"></a>Original Plan</h2><p>It has been a half month past since the start of 2015. My plan for 2014 seems has been finished OKay, though there is an important one didn’t finished. Actually it’s my first time to review my annual plan, thus things should be getting better anyway.</p>
+<p>In 2014, the most cheerful achievement should be that I finally got an good offer for work: a small IT company with great products. Also before that I was survived from Imperial College! Yeah!</p>
+<p>Yes now I’m a software engineering, who will focusing on imporve and maintain compiler for our company. Thus this year’s reading list would add a lot technique books such as <em>Data Structures and Algorithm</em>, <em>C++ Primer</em>, <em>Code Complete</em>, <em>Compilers: Principles, Techniques &amp; Tools</em></p>
+<p>Besides, I shall work hard for the oppourtunity to rotation to UK, and keep hardworking, looking for time to prepare GRE maybe.</p>
+<p>That’s it.</p>
+<h2 id="Review-at-the-end-of-March"><a href="#Review-at-the-end-of-March" class="headerlink" title="Review at the end of March"></a>Review at the end of March</h2><h3 id="Changes-of-Learning-Target"><a href="#Changes-of-Learning-Target" class="headerlink" title="Changes of Learning Target:"></a>Changes of Learning Target:</h3><p><em>Compilers</em> This will be put in the low priority.<br><em>SystemC</em> Need more time on learning this.</p>
+<h3 id="Languages"><a href="#Languages" class="headerlink" title="Languages:"></a>Languages:</h3><p>Also I started to learn Japanese online, current plan is to take the exam on December or next year’s July, for level N2. Good luck to me.</p>
+]]></content:encoded>
+      
+      <comments>http://mrtoniliu.github.io/2015/03/31/2015-Annual-Plan/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Test for Img</title>
+      <link>http://mrtoniliu.github.io/2015/03/30/Test-for-Img/</link>
+      <guid>http://mrtoniliu.github.io/2015/03/30/Test-for-Img/</guid>
+      <pubDate>Mon, 30 Mar 2015 12:29:42 GMT</pubDate>
+      <description>
+      
+        &lt;h2 id=&quot;Image-display&quot;&gt;&lt;a href=&quot;#Image-display&quot; class=&quot;headerlink&quot; title=&quot;Image display&quot;&gt;&lt;/a&gt;Image display&lt;/h2&gt;&lt;p&gt;To use image in markdown, 
+      
+      </description>
+      
+      <content:encoded><![CDATA[<h2 id="Image-display"><a href="#Image-display" class="headerlink" title="Image display"></a>Image display</h2><p>To use image in markdown, two things need to be done.</p>
+<ol>
+<li>There should be somewhere you can store the image online, here I choose Qiniu. </li>
+<li>Use the syntax <code>![some text]( /path/to/image.jpg &quot;image title&quot; )</code> </li>
+</ol>
+<p>e.g.</p>
+<p><img src="http://mrtoniliu-imagespace.qiniudn.com/imgDesktop.jpeg" alt="Desktop" title="The Desktop"> </p>
+<p>Then it should work.</p>
+]]></content:encoded>
+      
+      <comments>http://mrtoniliu.github.io/2015/03/30/Test-for-Img/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Testing</title>
+      <link>http://mrtoniliu.github.io/2015/03/30/Testing/</link>
+      <guid>http://mrtoniliu.github.io/2015/03/30/Testing/</guid>
+      <pubDate>Mon, 30 Mar 2015 05:44:17 GMT</pubDate>
+      <description>
+      
+        &lt;h2 id=&quot;Just-some-testing&quot;&gt;&lt;a href=&quot;#Just-some-testing&quot; class=&quot;headerlink&quot; title=&quot;Just some testing&quot;&gt;&lt;/a&gt;Just some testing&lt;/h2&gt;&lt;p&gt;This is a 
+      
+      </description>
+      
+      <content:encoded><![CDATA[<h2 id="Just-some-testing"><a href="#Just-some-testing" class="headerlink" title="Just some testing"></a>Just some testing</h2><p>This is a paragraph. More text here. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.</p>
+<p>Here are some code snippst: <code>var myname = &#39;Tony Liu&#39;;</code>, <code>#define age 24;</code></p>
+<p>More codes here:</p>
+<pre><code>#include&lt;stdio.h&gt;
+
+int main() {
+    int n, first = 0, second = 1, next, c;
+
+    printf(&quot;Enter the number of terms\n&quot;);
+    scanf(&quot;%d&quot;,&amp;n);
+
+    printf(&quot;First %d terms of Fibonacci series are :-\n&quot;,n);
+
+    for ( c = 0 ; c &lt; n ; c++ ) {
+        if ( c &lt;= 1 )
+            next = c;
+        else {
+            next = first + second;
+            first = second;
+            second = next;
+        }
+        printf(&quot;%d\n&quot;,next);
+    }
+    return 0;
+}
+</code></pre><p>And for the math mode: $x^2+3x+1=4$,</p>
+<p>Some more complicate ${n! \over k!(n-k)!} = {n \choose k}$</p>
+<p>Production? Yes: $$\prod_{i=0}^n \frac{1}{i^2}$$</p>
+<p>Limits? Yes: $$\lim_{n \rightarrow +\infty} \frac{1}{n(n+1)}$$</p>
+<p>However, it seems doesn’t support equations by default, need time to check how to enable it.</p>
+<h3 id="headings"><a href="#headings" class="headerlink" title="headings"></a>headings</h3><p><strong>Strong</strong>, <strong>Strong</strong></p>
+<p><del>Aha this need to be delete</del></p>
+<p>Oh should be some list:</p>
+<ul>
+<li>Hello world</li>
+<li>Print Integer</li>
+<li>Addtion</li>
+<li>Odd or Even</li>
+<li>Add, substract, multiply</li>
+</ul>
+]]></content:encoded>
+      
+      <comments>http://mrtoniliu.github.io/2015/03/30/Testing/#disqus_thread</comments>
+    </item>
+    
+  </channel>
+</rss>

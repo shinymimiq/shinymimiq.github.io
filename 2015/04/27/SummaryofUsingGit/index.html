@@ -1,0 +1,657 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+  <link rel="alternate" href="/rss2.xml" title="Keep Simple" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="IntroductionI’ve been use git for several times, starting from using GUI apps such as SourceTree or Tower on OS X. It works quite well, simple and strait forward. However, since I don’t have much more">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Summary of Using Git">
+<meta property="og:url" content="http://mrtoniliu.github.io/2015/04/27/SummaryofUsingGit/index.html">
+<meta property="og:site_name" content="Keep Simple">
+<meta property="og:description" content="IntroductionI’ve been use git for several times, starting from using GUI apps such as SourceTree or Tower on OS X. It works quite well, simple and strait forward. However, since I don’t have much more">
+<meta property="og:updated_time" content="2016-10-08T04:47:05.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Summary of Using Git">
+<meta name="twitter:description" content="IntroductionI’ve been use git for several times, starting from using GUI apps such as SourceTree or Tower on OS X. It works quite well, simple and strait forward. However, since I don’t have much more">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: 'Author'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://mrtoniliu.github.io/2015/04/27/SummaryofUsingGit/"/>
+
+  <title> Summary of Using Git | Keep Simple </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Keep Simple</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Summary of Using Git
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2015-04-27T18:20:08+08:00" content="2015-04-27">
+              2015-04-27
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/04/27/SummaryofUsingGit/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2015/04/27/SummaryofUsingGit/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>I’ve been use git for several times, starting from using GUI apps such as SourceTree or Tower on OS X. It works quite well, simple and strait forward. However, since I don’t have much more experience on complicate project, only familiar with basic concept of commit, checkout, branch and merge. Most of these are well done by these GUI application.</p>
+<p>When I switch to Linux in work, I have to learn more about git, especially for the command line usage.</p>
+<h2 id="Branches-and-Checkout"><a href="#Branches-and-Checkout" class="headerlink" title="Branches and Checkout"></a>Branches and Checkout</h2><p><code>git merge</code> and <code>git rebase</code> are two commands mainly used to put the changes from a branch to anther. For the difference between <code>merge</code> and <code>rebase</code>, there is a nicely written documents made by Atlassian.</p>
+<p>Normally the use command <code>git log</code> will show something like:</p>
+<pre><code>commit 7e05d686e0382446a0319ea33d60edaf51116aeb
+Author: tbsaunde &lt;tbsaunde@138bc75d-0d04-0410-961f-82ee72b054a4&gt;
+Date:   Thu Apr 30 02:08:05 2015 +0000
+
+    fixup libobjc&apos;s usage of PCC_BITFIELD_TYPE_MATTERS
+
+    libobjc/ChangeLog:
+
+        * encoding.c (objc_layout_structure_next_member): check value of
+        PCC_BITFIELD_TYPE_MATTERS instead of if it is defined.
+
+    git-svn-id: svn+ssh://gcc.gnu.org/svn/gcc/trunk@222605 138bc75d-0d04-0410-961f-82ee72b054a4
+</code></pre><p>or to simply it, use <code>git log --oneline</code>:</p>
+<pre><code>7e05d68 fixup libobjc&apos;s usage of PCC_BITFIELD_TYPE_MATTERS
+</code></pre><p>It is possible to create a branch using specific commit: <code>git checkout -b &lt;branch_name&gt; 7e05d68</code></p>
+<p>To switch between different branches, uses <code>git checkout &lt;branch_name&gt;</code> will be enough.</p>
+<h2 id="Stage-Commit-amp-Clean"><a href="#Stage-Commit-amp-Clean" class="headerlink" title="Stage Commit &amp; Clean"></a>Stage Commit &amp; Clean</h2><p>Stage and Commit are used to record the changes in the git repo.<br><code>git add .</code> or <code>git add -A</code> seems to be identical: to stage the changes.<br><code>git commit</code> will normally start vi to allow user type the commit message. If the commit message will be short, use <code>git commit -m &#39;&lt;commit message&gt;&#39;</code></p>
+<p>Some time we want to remove some untracked files, the <code>git clean</code> will be very helpful. Some time also can use <code>git rm</code> to manually specify the file to be removed. In addition, “.gitignore” is another way to ignore the files. </p>
+<h2 id="Status"><a href="#Status" class="headerlink" title="Status"></a>Status</h2><p>Use <code>git status</code> will show some brief information about the status of current git repo. It will be a good habit to use this command before some important command, such as pull, commit, merge. </p>
+<h2 id="Remote"><a href="#Remote" class="headerlink" title="Remote"></a>Remote</h2><p>The remote repo are quite useful when collaborate with other or using website such as Github. </p>
+<p>A quite useful workflow is that fork some repo from Github, then add the original repo as a upstream remote in the local repo, regularly pull the newest changes into local, so it will be more easier to deal with conflicts and track the upstream progress. </p>
+<p>Commands include: </p>
+<ul>
+<li><code>git remote -v</code> list the remote repo</li>
+<li><code>git remote add &lt;..&gt;</code> add a remote repo</li>
+<li><code>git remote remove</code> remove a remote repo</li>
+<li><code>git push -u | --set-upstream</code> will allow a branch to track the remote branch.</li>
+</ul>
+<h2 id="Submodules"><a href="#Submodules" class="headerlink" title="Submodules"></a>Submodules</h2><p>If want to use other git repo inside a repo, the submodules need to be used to avoid the conflicts between two repos. </p>
+<p>I’m not very familiar with submodule, thus this part will be completed later. </p>
+<h2 id="More-command"><a href="#More-command" class="headerlink" title="More command:"></a>More command:</h2><p>Some commands such as <code>git stash</code>, <code>git tag</code>, I don’t use them often, so they will also be introduced when I understand what they can do and how to use them. </p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/04/01/Working-Summary-Q1-2015/" rel="next" title="Working Summary Q1 2015">
+                <i class="fa fa-chevron-left"></i> Working Summary Q1 2015
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2015/06/16/What-is-code/" rel="prev" title="What is code">
+                What is code <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="https://en.gravatar.com/userimage/49458964/ef2b741c9388bce9873c303211d7cd24.png"
+               alt="Tony Liu" />
+          <p class="site-author-name" itemprop="name">Tony Liu</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">6</span>
+              <span class="site-state-item-name">posts</span>
+            </a>
+          </div>
+
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/rss2.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/mrtoniliu" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/mrtoniliu" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                  Twitter
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+          <div class="cc-license motion-element" itemprop="license">
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" target="_blank">
+              <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+            </a>
+          </div>
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Introduction"><span class="nav-number">1.</span> <span class="nav-text">Introduction</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Branches-and-Checkout"><span class="nav-number">2.</span> <span class="nav-text">Branches and Checkout</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Stage-Commit-amp-Clean"><span class="nav-number">3.</span> <span class="nav-text">Stage Commit & Clean</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Status"><span class="nav-number">4.</span> <span class="nav-text">Status</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Remote"><span class="nav-number">5.</span> <span class="nav-text">Remote</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Submodules"><span class="nav-number">6.</span> <span class="nav-text">Submodules</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#More-command"><span class="nav-number">7.</span> <span class="nav-text">More command:</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2015 - 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Tony Liu</span>
+</div>
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+    <script type="text/javascript">
+      var disqus_shortname = 'keepsimple';
+      var disqus_identifier = '2015/04/27/SummaryofUsingGit/';
+      var disqus_title = "Summary of Using Git";
+      var disqus_url = 'http://mrtoniliu.github.io/2015/04/27/SummaryofUsingGit/';
+
+      function run_disqus_script(disqus_script){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+
+      run_disqus_script('count.js');
+      
+        run_disqus_script('embed.js');
+      
+    </script>
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
