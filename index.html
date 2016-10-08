@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next mist use-motion">
+<html class="theme-next muse use-motion">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -98,7 +98,7 @@
 <script type="text/javascript" id="hexo.configuration">
   var NexT = window.NexT || {};
   var CONFIG = {
-    scheme: 'Mist',
+    scheme: 'Muse',
     sidebar: {"position":"left","display":"post"},
     fancybox: true,
     motion: true,
@@ -179,12 +179,12 @@
         </li>
       
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
-            Archives
+            About
           </a>
         </li>
       
@@ -855,29 +855,8 @@ Date:   Thu Apr 30 02:08:05 2015 +0000
             <h2 id="Just-some-testing"><a href="#Just-some-testing" class="headerlink" title="Just some testing"></a>Just some testing</h2><p>This is a paragraph. More text here. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.</p>
 <p>Here are some code snippst: <code>var myname = &#39;Tony Liu&#39;;</code>, <code>#define age 24;</code></p>
 <p>More codes here:</p>
-<pre><code>#include&lt;stdio.h&gt;
-
-int main() {
-    int n, first = 0, second = 1, next, c;
-
-    printf(&quot;Enter the number of terms\n&quot;);
-    scanf(&quot;%d&quot;,&amp;n);
-
-    printf(&quot;First %d terms of Fibonacci series are :-\n&quot;,n);
-
-    for ( c = 0 ; c &lt; n ; c++ ) {
-        if ( c &lt;= 1 )
-            next = c;
-        else {
-            next = first + second;
-            first = second;
-            second = next;
-        }
-        printf(&quot;%d\n&quot;,next);
-    }
-    return 0;
-}
-</code></pre><p>And for the math mode: $x^2+3x+1=4$,</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="keyword">int</span> n, first = <span class="number">0</span>, second = <span class="number">1</span>, next, c;</div><div class="line"></div><div class="line">    <span class="built_in">printf</span>(<span class="string">"Enter the number of terms\n"</span>);</div><div class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;n);</div><div class="line"></div><div class="line">    <span class="built_in">printf</span>(<span class="string">"First %d terms of Fibonacci series are :-\n"</span>,n);</div><div class="line"></div><div class="line">    <span class="keyword">for</span> ( c = <span class="number">0</span> ; c &lt; n ; c++ ) &#123;</div><div class="line">        <span class="keyword">if</span> ( c &lt;= <span class="number">1</span> )</div><div class="line">            next = c;</div><div class="line">        <span class="keyword">else</span> &#123;</div><div class="line">            next = first + second;</div><div class="line">            first = second;</div><div class="line">            second = next;</div><div class="line">        &#125;</div><div class="line">        <span class="built_in">printf</span>(<span class="string">"%d\n"</span>,next);</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>And for the math mode: $x^2+3x+1=4$,</p>
 <p>Some more complicate ${n! \over k!(n-k)!} = {n \choose k}$</p>
 <p>Production? Yes: $$\prod_{i=0}^n \frac{1}{i^2}$$</p>
 <p>Limits? Yes: $$\lim_{n \rightarrow +\infty} \frac{1}{n(n+1)}$$</p>
@@ -960,7 +939,7 @@ int main() {
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
-            <a href="/archives">
+            <a href="/">
               <span class="site-state-item-count">6</span>
               <span class="site-state-item-name">posts</span>
             </a>
@@ -1055,7 +1034,7 @@ int main() {
 <div class="theme-info">
   Theme -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
+    NexT.Muse
   </a>
 </div>
 
