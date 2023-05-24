@@ -1,355 +1,802 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en-US">
 <head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.3.0">
 
-  <!-- Minima -->
-  <!-- Hexo theme created by @adisaktijrs -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
+<link rel="stylesheet" href="/css/main.css">
 
-  
-  <title>Keep Simple</title>
-  
-  <link rel="canonical" href="http://shinymimiq.github.io/">
-  
-  <meta name="description" content="">
-  
-  
-  <meta name="author" content="Tony Liu">
-  
-  <meta property="og:image" content="http://shinymimiq.github.io/images/thumbnail.jpg">
-  
-  <meta property="og:site_name" content="Keep Simple" />
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content="Keep Simple" />
-  
-  <meta property="og:description" content="">
-  
-  <meta property="og:url" content="http://shinymimiq.github.io/" />
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Keep Simple">
-  
-  <meta name="twitter:description" content="">
-  
-  
-  <meta name="twitter:image" content="http://shinymimiq.github.io/images/thumbnail.jpg">
-  
-  <meta name="twitter:url" content="http://shinymimiq.github.io/" />
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-  <!-- Preload fonts
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="preload" href="../fonts/dm-serif-display-v4-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="../fonts/inter-v2-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"shinymimiq.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.16.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"بحث...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  
-<link rel="stylesheet" href="/css/normalize.css">
+    <meta property="og:type" content="website">
+<meta property="og:title" content="Keep Simple">
+<meta property="og:url" content="http://shinymimiq.github.io/index.html">
+<meta property="og:site_name" content="Keep Simple">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="Tony Liu">
+<meta name="twitter:card" content="summary">
 
-  
-<link rel="stylesheet" href="/css/skeleton.css">
 
-  
-<link rel="stylesheet" href="/css/custom.css">
+<link rel="canonical" href="http://shinymimiq.github.io/">
 
-  
-<link rel="stylesheet" href="/css/prism-dark.css">
 
-  
-<link rel="stylesheet" href="/css/prism-line-numbers.css">
 
-  <!-- User css -->
-  
-  
-<link rel="stylesheet" href="/css/user.css">
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"en-US","comments":"","permalink":"","path":"index.html","title":""}</script>
 
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Keep Simple</title>
   
 
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="/images/favicon.png">
 
-  <!-- Custom Theme Color Style
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <style>
-  a:not(.icon) {
-    text-decoration-color: #0FA0CE;
-    background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0) 50%,
-      #0FA0CE 50%
-    );
-  }
-  blockquote {
-    border-left: 8px solid #0FA0CE;
-  }
-  .nanobar .bar {
-    background: #0FA0CE;
-  }
-  .button.button-primary:hover,
-  button.button-primary:hover,
-  input[type="submit"].button-primary:hover,
-  input[type="reset"].button-primary:hover,
-  input[type="button"].button-primary:hover,
-  .button.button-primary:focus,
-  button.button-primary:focus,
-  input[type="submit"].button-primary:focus,
-  input[type="reset"].button-primary:focus,
-  input[type="button"].button-primary:focus {
-    background-color: #0FA0CE;
-    border-color: #0FA0CE;
-  }
-  input[type="email"]:focus,
-  input[type="number"]:focus,
-  input[type="search"]:focus,
-  input[type="text"]:focus,
-  input[type="tel"]:focus,
-  input[type="url"]:focus,
-  input[type="password"]:focus,
-  textarea:focus,
-  select:focus {
-    border: 1px solid #0FA0CE;
-  }
-</style>
 
-  <!-- Google Analytics (With Privacy Settings On)
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  
 
-<meta name="generator" content="Hexo 6.3.0"></head>
 
-<body>
-  <div class="container">
-    <div class="row">
-      <div>
 
-        <div class="row">
-  <div class="two columns" style="max-width: 50px">
-    <h1 class="mt-2 mode">
-      <div onclick=setDarkMode(true) id="darkBtn">🌑</div>
-      <div onclick=setDarkMode(false) id="lightBtn" class=hidden>☀️</div>
-      <script >
-        if (localStorage.getItem('preferredTheme') == 'dark') {
-          setDarkMode(true)
-        }
-        function setDarkMode(isDark) {
-          var darkBtn = document.getElementById('darkBtn')
-          var lightBtn = document.getElementById('lightBtn')
-          if (isDark) {
-            lightBtn.style.display = "block"
-            darkBtn.style.display = "none"
-            localStorage.setItem('preferredTheme', 'dark');
-          } else {
-            lightBtn.style.display = "none"
-            darkBtn.style.display = "block"
-            localStorage.removeItem('preferredTheme');
-          }
-          document.body.classList.toggle("darkmode");
-        }
-      </script>
-    </h1>
-  </div>
 
-  <div class="six columns ml-1">
-    <h1 class="mt-2">
-      Keep Simple
-    </h1>
-  </div>
 
-  <div class="twelve columns">
-    <div class="row">
-      <div class="nine columns left">
-        <a href="/">Home</a>
-        
-          
-          <a href="/About" class="ml">About</a>
-          
-        
-        
-      </div>
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="تشغيل شريط التصفح" role="button">
     </div>
-    <hr style="margin-bottom: 2.6rem">
   </div>
-</div>
 
-        <div class="trans">
-          <div class="row">
-  <div class="column">
-    <!-- Main information, edit it on theme/_config.yml -->
-    <h2 class="mb-2"></h2>
-    <p></p>
-    <p></p>
-  </div>
-</div>
+  <div class="site-meta">
 
-<h3>Recent Posts</h3>
-
-
-<div class="row">
-
-  <div class="three columns left lit">
-    <p class="bottom">May 24, 2023</p>
-  </div>
-  <div class="nine columns left mb-3">
-    <a href="/2023/05/24/test-from-2023/" >
-      
-        test_from_2023
-      
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">Keep Simple</h1>
+      <i class="logo-line"></i>
     </a>
   </div>
-</div>
 
-<div class="row">
-
-  <div class="three columns left lit">
-    <p class="bottom">Jun 16, 2015</p>
-  </div>
-  <div class="nine columns left mb-3">
-    <a href="/2015/06/16/What-is-code/" >
-      
-        What is code
-      
-    </a>
-  </div>
-</div>
-
-<div class="row">
-
-  <div class="three columns left lit">
-    <p class="bottom">Apr 27, 2015</p>
-  </div>
-  <div class="nine columns left mb-3">
-    <a href="/2015/04/27/SummaryofUsingGit/" >
-      
-        Summary of Using Git
-      
-    </a>
-  </div>
-</div>
-
-<div class="row">
-
-  <div class="three columns left lit">
-    <p class="bottom">Apr 1, 2015</p>
-  </div>
-  <div class="nine columns left mb-3">
-    <a href="/2015/04/01/Working-Summary-Q1-2015/" >
-      
-        Working Summary Q1 2015
-      
-    </a>
-  </div>
-</div>
-
-<div class="row">
-
-  <div class="three columns left lit">
-    <p class="bottom">Mar 31, 2015</p>
-  </div>
-  <div class="nine columns left mb-3">
-    <a href="/2015/03/31/2015-Annual-Plan/" >
-      
-        2015 Annual Plan
-      
-    </a>
-  </div>
-</div>
-
-<div class="row">
-
-  <div class="three columns left lit">
-    <p class="bottom">Mar 30, 2015</p>
-  </div>
-  <div class="nine columns left mb-3">
-    <a href="/2015/03/30/Test-for-Img/" >
-      
-        Test for Img
-      
-    </a>
-  </div>
-</div>
-
-<div class="row">
-
-  <div class="three columns left lit">
-    <p class="bottom">Mar 30, 2015</p>
-  </div>
-  <div class="nine columns left mb-3">
-    <a href="/2015/03/30/Testing/" >
-      
-        Testing
-      
-    </a>
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="بحث" role="button">
+    </div>
   </div>
 </div>
 
 
-<h4> <a href="/archives">All Posts</a></h4>
 
-          <div class="row mt-2">
+
+
+
+
+</header>
+        
   
-    <div class="eight columns">
-      <p id="madewith">Made with ❤ and
-        <a class="footer-link icon" href="https://hexo.io" target="_blank" style="text-decoration: none;" rel="noreferrer" aria-label="Hexo.io">
-        <svg class="hexo svg-hov" width="14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Hexo.js</title><path d="M12 .007L1.57 6.056V18.05L12 23.995l10.43-6.049V5.952L12 .007zm4.798 17.105l-.939.521-.939-.521V12.94H9.08v4.172l-.94.521-.938-.521V6.89l.939-.521.939.521v4.172h5.84V6.89l.94-.521.938.521v10.222z"/></svg>
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          المحتويات
+        </li>
+        <li class="sidebar-nav-overview">
+          عام
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Tony Liu</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-name">المقالات</span>
         </a>
-        
-        at <a href="https://en.wikipedia.org/wiki/Earth" target="_blank" rel="noreferrer">Earth</a>.</p>
-        
-    </div>
-
-    <!-- Sepcial thanks to https://simpleicons.org/ for the icons -->
-    <div class="four columns mb-3 posisi" >
-      
-      <a class="ml-0 footer-link icon" href="https://github.com/shinymimiq" target="_blank" style="text-decoration: none" rel="noreferrer" aria-label="GitHub">
-        <svg class="github svg-hov" width="18" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-      </a>
-      
-
-      
-
-      
-      <a class="ml-0 footer-link icon" href="https://twitter.com/shinymimiq" target="_blank" style="text-decoration: none" rel="noreferrer" aria-label="Twitter">
-        <svg class="twitter svg-hov" width="18" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter</title><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/></svg>
-      </a>
-      
-
-      
-      <a class="ml-0 footer-link icon" href="https://instagram.com/shinymimiq" target="_blank" style="text-decoration: none" rel="noreferrer" aria-label="Instagram">
-        <svg class="instagram svg-hov" width="18" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
-      </a>
-      
-
-    </div>
-  
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">الوسوم</span></a>
+      </div>
+  </nav>
 </div>
 
         </div>
       </div>
+    </div>
+
+    
+  </aside>
+
 
     </div>
 
+    <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://shinymimiq.github.io/2023/05/24/test-from-2023/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Tony Liu">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Keep Simple">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Keep Simple">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/05/24/test-from-2023/" class="post-title-link" itemprop="url">test_from_2023</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">نُشر في</span>
+      
+
+      <time title="أُنشأ: 2023-05-24 13:51:20 / عُدل: 14:44:36" itemprop="dateCreated datePublished" datetime="2023-05-24T13:51:20+08:00">2023-05-24</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="A-test-from-2023"><a href="#A-test-from-2023" class="headerlink" title="A test from 2023"></a>A test from 2023</h1><p>This site is been created in 2015 with Hexo 3.x<br>Just try to update the Hexo version to 6.x and create this post for testing purpose.<br>This site will be use github action for CI&#x2F;CD</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://shinymimiq.github.io/2015/06/16/What-is-code/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Tony Liu">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Keep Simple">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Keep Simple">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2015/06/16/What-is-code/" class="post-title-link" itemprop="url">What is code</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">نُشر في</span>
+
+      <time title="أُنشأ: 2015-06-16 14:15:31" itemprop="dateCreated datePublished" datetime="2015-06-16T14:15:31+08:00">2015-06-16</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">عُدل في</span>
+      <time title="عُدل: 2023-05-24 14:44:36" itemprop="dateModified" datetime="2023-05-24T14:44:36+08:00">2023-05-24</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>Found a quite useful website to describe the basic knowledge about computer and programming.</p>
+<p><a target="_blank" rel="noopener" href="http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/">http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/</a></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://shinymimiq.github.io/2015/04/27/SummaryofUsingGit/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Tony Liu">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Keep Simple">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Keep Simple">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2015/04/27/SummaryofUsingGit/" class="post-title-link" itemprop="url">Summary of Using Git</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">نُشر في</span>
+
+      <time title="أُنشأ: 2015-04-27 18:20:08" itemprop="dateCreated datePublished" datetime="2015-04-27T18:20:08+08:00">2015-04-27</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">عُدل في</span>
+      <time title="عُدل: 2023-05-24 14:44:36" itemprop="dateModified" datetime="2023-05-24T14:44:36+08:00">2023-05-24</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>I’ve been use git for several times, starting from using GUI apps such as SourceTree or Tower on OS X. It works quite well, simple and strait forward. However, since I don’t have much more experience on complicate project, only familiar with basic concept of commit, checkout, branch and merge. Most of these are well done by these GUI application.</p>
+<p>When I switch to Linux in work, I have to learn more about git, especially for the command line usage.</p>
+<h2 id="Branches-and-Checkout"><a href="#Branches-and-Checkout" class="headerlink" title="Branches and Checkout"></a>Branches and Checkout</h2><p><code>git merge</code> and <code>git rebase</code> are two commands mainly used to put the changes from a branch to anther. For the difference between <code>merge</code> and <code>rebase</code>, there is a nicely written documents made by Atlassian.</p>
+<p>Normally the use command <code>git log</code> will show something like:</p>
+<pre><code>commit 7e05d686e0382446a0319ea33d60edaf51116aeb
+Author: tbsaunde &lt;tbsaunde@138bc75d-0d04-0410-961f-82ee72b054a4&gt;
+Date:   Thu Apr 30 02:08:05 2015 +0000
+
+    fixup libobjc&#39;s usage of PCC_BITFIELD_TYPE_MATTERS
+
+    libobjc/ChangeLog:
+
+        * encoding.c (objc_layout_structure_next_member): check value of
+        PCC_BITFIELD_TYPE_MATTERS instead of if it is defined.
+
+    git-svn-id: svn+ssh://gcc.gnu.org/svn/gcc/trunk@222605 138bc75d-0d04-0410-961f-82ee72b054a4
+</code></pre>
+<p>or to simply it, use <code>git log --oneline</code>:</p>
+<pre><code>7e05d68 fixup libobjc&#39;s usage of PCC_BITFIELD_TYPE_MATTERS
+</code></pre>
+<p>It is possible to create a branch using specific commit: <code>git checkout -b &lt;branch_name&gt; 7e05d68</code></p>
+<p>To switch between different branches, uses <code>git checkout &lt;branch_name&gt;</code> will be enough.</p>
+<h2 id="Stage-Commit-amp-Clean"><a href="#Stage-Commit-amp-Clean" class="headerlink" title="Stage Commit &amp; Clean"></a>Stage Commit &amp; Clean</h2><p>Stage and Commit are used to record the changes in the git repo.<br><code>git add .</code> or <code>git add -A</code> seems to be identical: to stage the changes.<br><code>git commit</code> will normally start vi to allow user type the commit message. If the commit message will be short, use <code>git commit -m &#39;&lt;commit message&gt;&#39;</code></p>
+<p>Some time we want to remove some untracked files, the <code>git clean</code> will be very helpful. Some time also can use <code>git rm</code> to manually specify the file to be removed. In addition, “.gitignore” is another way to ignore the files. </p>
+<h2 id="Status"><a href="#Status" class="headerlink" title="Status"></a>Status</h2><p>Use <code>git status</code> will show some brief information about the status of current git repo. It will be a good habit to use this command before some important command, such as pull, commit, merge. </p>
+<h2 id="Remote"><a href="#Remote" class="headerlink" title="Remote"></a>Remote</h2><p>The remote repo are quite useful when collaborate with other or using website such as Github. </p>
+<p>A quite useful workflow is that fork some repo from Github, then add the original repo as a upstream remote in the local repo, regularly pull the newest changes into local, so it will be more easier to deal with conflicts and track the upstream progress. </p>
+<p>Commands include: </p>
+<ul>
+<li><code>git remote -v</code> list the remote repo</li>
+<li><code>git remote add &lt;..&gt;</code> add a remote repo</li>
+<li><code>git remote remove</code> remove a remote repo</li>
+<li><code>git push -u | --set-upstream</code> will allow a branch to track the remote branch.</li>
+</ul>
+<h2 id="Submodules"><a href="#Submodules" class="headerlink" title="Submodules"></a>Submodules</h2><p>If want to use other git repo inside a repo, the submodules need to be used to avoid the conflicts between two repos. </p>
+<p>I’m not very familiar with submodule, thus this part will be completed later. </p>
+<h2 id="More-command"><a href="#More-command" class="headerlink" title="More command:"></a>More command:</h2><p>Some commands such as <code>git stash</code>, <code>git tag</code>, I don’t use them often, so they will also be introduced when I understand what they can do and how to use them. </p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://shinymimiq.github.io/2015/04/01/Working-Summary-Q1-2015/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Tony Liu">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Keep Simple">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Keep Simple">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2015/04/01/Working-Summary-Q1-2015/" class="post-title-link" itemprop="url">Working Summary Q1 2015</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">نُشر في</span>
+
+      <time title="أُنشأ: 2015-04-01 11:38:47" itemprop="dateCreated datePublished" datetime="2015-04-01T11:38:47+08:00">2015-04-01</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">عُدل في</span>
+      <time title="عُدل: 2023-05-24 14:44:36" itemprop="dateModified" datetime="2023-05-24T14:44:36+08:00">2023-05-24</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>Since I may need to switch team, I can make a brief summary about what I’ve learned after first 3 months in ARM.</p>
+<h2 id="Background"><a href="#Background" class="headerlink" title="Background"></a>Background</h2><p>I joined ARM from the beginning of Jan, 2015 as Graduate Compiler Engineering. ARM is a company selling its IP designs, or more generally, design chips. However, softwares designed for ARM platforms generally need to be compiled, in other words, translated to the machine code that ARM chips can understand. Thus, the compiler is what I suppose to work with ( but maybe not for future works ).</p>
+<h2 id="Works"><a href="#Works" class="headerlink" title="Works"></a>Works</h2><p>Our team is focusing on GCC development or optimisation for ARM Cortex-R&#x2F;M chips. Daily tasks including building entire toolchain using trunk version of GCC, regression tests for different platforms, such as Cortex-M0, M4, M7, GCC bug fix, optimisations etc. We also will publish our toolchain for embedded developer who want to use gcc to build programmes for Cortex-R&#x2F;M chips.</p>
+<p>Since I only worked less than 3 months, there are only quite simple tasks assigned to me, such as fixing a bug in test suites in GCC, validations the release version of our toolchain, design a small system to track the code size changes in Newlib ( A implementation of standard C library for embedded systems).</p>
+<h2 id="Techniques"><a href="#Techniques" class="headerlink" title="Techniques"></a>Techniques</h2><p>Our works are mainly done on the Linux (Ubuntu for most of us, maybe there is a guy using Debian).</p>
+<p>We have a lot script files ( Shell, Python, Perl ) to automate our daily workflow.</p>
+<p>The command such as grep, sed, awk are extremely useful daily work. I’m not yet enough familiar with these command.</p>
+<p>The VCS used in team is git, it also are very very useful during fixing bugs in GCC and testing, because it will take quite a lot time to build entire GCC even on our i7 desktops.</p>
+<p>We use CI as our test and release strategy, uses Jenkins as the tool. Actually I have the plan to switch the building, release framework to Buildbot as HQ is using such tool.</p>
+<p>As mentioned before, I was assigned the project to design a small system to track the code size changes in Newlib and some benchmarks results. We uses Tableau as the front end to visualise quite a lot data. In such project, I wrote a Python script mainly generating a .csv file which contains all raw data required. Then another Python script to convert to the required JSON files for the data server. To be honest, there are quite lots of enhancement can be make for there python scripts.</p>
+<h2 id="Future"><a href="#Future" class="headerlink" title="Future"></a>Future</h2><p>New team and new project is waiting. Maybe more C++ working, even some SystemC. Not sure yet.</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://shinymimiq.github.io/2015/03/31/2015-Annual-Plan/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Tony Liu">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Keep Simple">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Keep Simple">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2015/03/31/2015-Annual-Plan/" class="post-title-link" itemprop="url">2015 Annual Plan</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">نُشر في</span>
+
+      <time title="أُنشأ: 2015-03-31 09:41:51" itemprop="dateCreated datePublished" datetime="2015-03-31T09:41:51+08:00">2015-03-31</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">عُدل في</span>
+      <time title="عُدل: 2023-05-24 14:44:36" itemprop="dateModified" datetime="2023-05-24T14:44:36+08:00">2023-05-24</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p><code>This article was originally written in January</code></p>
+<h2 id="Original-Plan"><a href="#Original-Plan" class="headerlink" title="Original Plan"></a>Original Plan</h2><p>It has been a half month past since the start of 2015. My plan for 2014 seems has been finished OKay, though there is an important one didn’t finished. Actually it’s my first time to review my annual plan, thus things should be getting better anyway.</p>
+<p>In 2014, the most cheerful achievement should be that I finally got an good offer for work: a small IT company with great products. Also before that I was survived from Imperial College! Yeah!</p>
+<p>Yes now I’m a software engineering, who will focusing on imporve and maintain compiler for our company. Thus this year’s reading list would add a lot technique books such as <em>Data Structures and Algorithm</em>, <em>C++ Primer</em>, <em>Code Complete</em>, <em>Compilers: Principles, Techniques &amp; Tools</em></p>
+<p>Besides, I shall work hard for the oppourtunity to rotation to UK, and keep hardworking, looking for time to prepare GRE maybe.</p>
+<p>That’s it.</p>
+<h2 id="Review-at-the-end-of-March"><a href="#Review-at-the-end-of-March" class="headerlink" title="Review at the end of March"></a>Review at the end of March</h2><h3 id="Changes-of-Learning-Target"><a href="#Changes-of-Learning-Target" class="headerlink" title="Changes of Learning Target:"></a>Changes of Learning Target:</h3><p><em>Compilers</em> This will be put in the low priority.<br><em>SystemC</em> Need more time on learning this.</p>
+<h3 id="Languages"><a href="#Languages" class="headerlink" title="Languages:"></a>Languages:</h3><p>Also I started to learn Japanese online, current plan is to take the exam on December or next year’s July, for level N2. Good luck to me.</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://shinymimiq.github.io/2015/03/30/Test-for-Img/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Tony Liu">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Keep Simple">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Keep Simple">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2015/03/30/Test-for-Img/" class="post-title-link" itemprop="url">Test for Img</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">نُشر في</span>
+
+      <time title="أُنشأ: 2015-03-30 20:29:42" itemprop="dateCreated datePublished" datetime="2015-03-30T20:29:42+08:00">2015-03-30</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">عُدل في</span>
+      <time title="عُدل: 2023-05-24 14:44:36" itemprop="dateModified" datetime="2023-05-24T14:44:36+08:00">2023-05-24</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="Image-display"><a href="#Image-display" class="headerlink" title="Image display"></a>Image display</h2><p>To use image in markdown, two things need to be done.</p>
+<ol>
+<li>There should be somewhere you can store the image online, here I choose Qiniu. </li>
+<li>Use the syntax <code>![some text]( /path/to/image.jpg &quot;image title&quot; )</code></li>
+</ol>
+<p>e.g.</p>
+<p><img src="http://mrtoniliu-imagespace.qiniudn.com/imgDesktop.jpeg" alt="Desktop" title="The Desktop"> </p>
+<p>Then it should work.</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://shinymimiq.github.io/2015/03/30/Testing/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Tony Liu">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Keep Simple">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Keep Simple">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2015/03/30/Testing/" class="post-title-link" itemprop="url">Testing</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">نُشر في</span>
+
+      <time title="أُنشأ: 2015-03-30 13:44:17" itemprop="dateCreated datePublished" datetime="2015-03-30T13:44:17+08:00">2015-03-30</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">عُدل في</span>
+      <time title="عُدل: 2023-05-24 14:44:36" itemprop="dateModified" datetime="2023-05-24T14:44:36+08:00">2023-05-24</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="Just-some-testing"><a href="#Just-some-testing" class="headerlink" title="Just some testing"></a>Just some testing</h2><p>This is a paragraph. More text here. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.</p>
+<p>Here are some code snippst: <code>var myname = &#39;Tony Liu&#39;;</code>, <code>#define age 24;</code></p>
+<p>More codes here:</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> n, first = <span class="number">0</span>, second = <span class="number">1</span>, next, c;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Enter the number of terms\n&quot;</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;n);</span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;First %d terms of Fibonacci series are :-\n&quot;</span>,n);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> ( c = <span class="number">0</span> ; c &lt; n ; c++ ) &#123;</span><br><span class="line">        <span class="keyword">if</span> ( c &lt;= <span class="number">1</span> )</span><br><span class="line">            next = c;</span><br><span class="line">        <span class="keyword">else</span> &#123;</span><br><span class="line">            next = first + second;</span><br><span class="line">            first = second;</span><br><span class="line">            second = next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,next);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>And for the math mode: $x^2+3x+1&#x3D;4$,</p>
+<p>Some more complicate ${n! \over k!(n-k)!} &#x3D; {n \choose k}$</p>
+<p>Production? Yes: $$\prod_{i&#x3D;0}^n \frac{1}{i^2}$$</p>
+<p>Limits? Yes: $$\lim_{n \rightarrow +\infty} \frac{1}{n(n+1)}$$</p>
+<p>However, it seems doesn’t support equations by default, need time to check how to enable it.</p>
+<h3 id="headings"><a href="#headings" class="headerlink" title="headings"></a>headings</h3><p><strong>Strong</strong>, <strong>Strong</strong></p>
+<p><del>Aha this need to be delete</del></p>
+<p>Oh should be some list:</p>
+<ul>
+<li>Hello world</li>
+<li>Print Integer</li>
+<li>Addtion</li>
+<li>Odd or Even</li>
+<li>Add, substract, multiply</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Tony Liu</span>
+</div>
+  <div class="powered-by">تطبيق الموقع <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
   </div>
-  <script src="/js/nanobar.min.js"></script>
-  <script>
-    var options = {
-      classname: 'nanobar',
-      id: 'myNanobar'
-    };
-    var nanobar = new Nanobar(options);
-    nanobar.go(30);
-    nanobar.go(76);
-    nanobar.go(100);
-  </script>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+  
+
+
+
+
 
 </body>
-
 </html>
