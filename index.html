@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
@@ -18,7 +18,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"shinymimiq.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.16.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"بحث...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"shinymimiq.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.16.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
     <meta property="og:type" content="website">
 <meta property="og:title" content="Keep Simple">
@@ -33,7 +33,7 @@
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"en-US","comments":"","permalink":"","path":"index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"en","comments":"","permalink":"","path":"index.html","title":""}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>Keep Simple</title>
@@ -58,7 +58,10 @@
     <div class="column">
       <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="تشغيل شريط التصفح" role="button">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
     </div>
   </div>
 
@@ -72,13 +75,17 @@
   </div>
 
   <div class="site-nav-right">
-    <div class="toggle popup-trigger" aria-label="بحث" role="button">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
     </div>
   </div>
 </div>
 
 
 
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+  </ul>
+</nav>
 
 
 
@@ -91,10 +98,10 @@
     <div class="sidebar-inner sidebar-overview-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
-          المحتويات
+          Table of Contents
         </li>
         <li class="sidebar-nav-overview">
-          عام
+          Overview
         </li>
       </ul>
 
@@ -113,14 +120,9 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">7</span>
-          <span class="site-state-item-name">المقالات</span>
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">posts</span>
         </a>
-      </div>
-      <div class="site-state-item site-state-tags">
-          <a href="/tags/">
-        <span class="site-state-item-count">4</span>
-        <span class="site-state-item-name">الوسوم</span></a>
       </div>
   </nav>
 </div>
@@ -172,10 +174,10 @@
       <span class="post-meta-item-icon">
         <i class="far fa-calendar"></i>
       </span>
-      <span class="post-meta-item-text">نُشر في</span>
+      <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="أُنشأ: 2023-05-24 13:51:20 / عُدل: 15:02:42" itemprop="dateCreated datePublished" datetime="2023-05-24T13:51:20+08:00">2023-05-24</time>
+      <time title="Created: 2023-05-24 13:51:20 / Modified: 15:48:07" itemprop="dateCreated datePublished" datetime="2023-05-24T13:51:20+08:00">2023-05-24</time>
     </span>
 
   
@@ -189,83 +191,6 @@
     
     <div class="post-body" itemprop="articleBody">
           <h1 id="A-test-from-2023"><a href="#A-test-from-2023" class="headerlink" title="A test from 2023"></a>A test from 2023</h1><p>This site is been created in 2015 with Hexo 3.x<br>Just try to update the Hexo version to 6.x and create this post for testing purpose.<br>This site will be use github action for CI&#x2F;CD</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://shinymimiq.github.io/2015/06/16/What-is-code/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Tony Liu">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Keep Simple">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Keep Simple">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2015/06/16/What-is-code/" class="post-title-link" itemprop="url">What is code</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">نُشر في</span>
-
-      <time title="أُنشأ: 2015-06-16 14:15:31" itemprop="dateCreated datePublished" datetime="2015-06-16T14:15:31+08:00">2015-06-16</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">عُدل في</span>
-      <time title="عُدل: 2023-05-24 15:02:42" itemprop="dateModified" datetime="2023-05-24T15:02:42+08:00">2023-05-24</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>Found a quite useful website to describe the basic knowledge about computer and programming.</p>
-<p><a target="_blank" rel="noopener" href="http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/">http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/</a></p>
 
       
     </div>
@@ -319,16 +244,16 @@
       <span class="post-meta-item-icon">
         <i class="far fa-calendar"></i>
       </span>
-      <span class="post-meta-item-text">نُشر في</span>
+      <span class="post-meta-item-text">Posted on</span>
 
-      <time title="أُنشأ: 2015-04-27 18:20:08" itemprop="dateCreated datePublished" datetime="2015-04-27T18:20:08+08:00">2015-04-27</time>
+      <time title="Created: 2015-04-27 18:20:08" itemprop="dateCreated datePublished" datetime="2015-04-27T18:20:08+08:00">2015-04-27</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-calendar-check"></i>
       </span>
-      <span class="post-meta-item-text">عُدل في</span>
-      <time title="عُدل: 2023-05-24 15:02:42" itemprop="dateModified" datetime="2023-05-24T15:02:42+08:00">2023-05-24</time>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2023-05-24 15:48:07" itemprop="dateModified" datetime="2023-05-24T15:48:07+08:00">2023-05-24</time>
     </span>
 
   
@@ -396,353 +321,6 @@ Date:   Thu Apr 30 02:08:05 2015 +0000
 
 
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://shinymimiq.github.io/2015/04/01/Working-Summary-Q1-2015/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Tony Liu">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Keep Simple">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Keep Simple">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2015/04/01/Working-Summary-Q1-2015/" class="post-title-link" itemprop="url">Working Summary Q1 2015</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">نُشر في</span>
-
-      <time title="أُنشأ: 2015-04-01 11:38:47" itemprop="dateCreated datePublished" datetime="2015-04-01T11:38:47+08:00">2015-04-01</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">عُدل في</span>
-      <time title="عُدل: 2023-05-24 15:02:42" itemprop="dateModified" datetime="2023-05-24T15:02:42+08:00">2023-05-24</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>Since I may need to switch team, I can make a brief summary about what I’ve learned after first 3 months in ARM.</p>
-<h2 id="Background"><a href="#Background" class="headerlink" title="Background"></a>Background</h2><p>I joined ARM from the beginning of Jan, 2015 as Graduate Compiler Engineering. ARM is a company selling its IP designs, or more generally, design chips. However, softwares designed for ARM platforms generally need to be compiled, in other words, translated to the machine code that ARM chips can understand. Thus, the compiler is what I suppose to work with ( but maybe not for future works ).</p>
-<h2 id="Works"><a href="#Works" class="headerlink" title="Works"></a>Works</h2><p>Our team is focusing on GCC development or optimisation for ARM Cortex-R&#x2F;M chips. Daily tasks including building entire toolchain using trunk version of GCC, regression tests for different platforms, such as Cortex-M0, M4, M7, GCC bug fix, optimisations etc. We also will publish our toolchain for embedded developer who want to use gcc to build programmes for Cortex-R&#x2F;M chips.</p>
-<p>Since I only worked less than 3 months, there are only quite simple tasks assigned to me, such as fixing a bug in test suites in GCC, validations the release version of our toolchain, design a small system to track the code size changes in Newlib ( A implementation of standard C library for embedded systems).</p>
-<h2 id="Techniques"><a href="#Techniques" class="headerlink" title="Techniques"></a>Techniques</h2><p>Our works are mainly done on the Linux (Ubuntu for most of us, maybe there is a guy using Debian).</p>
-<p>We have a lot script files ( Shell, Python, Perl ) to automate our daily workflow.</p>
-<p>The command such as grep, sed, awk are extremely useful daily work. I’m not yet enough familiar with these command.</p>
-<p>The VCS used in team is git, it also are very very useful during fixing bugs in GCC and testing, because it will take quite a lot time to build entire GCC even on our i7 desktops.</p>
-<p>We use CI as our test and release strategy, uses Jenkins as the tool. Actually I have the plan to switch the building, release framework to Buildbot as HQ is using such tool.</p>
-<p>As mentioned before, I was assigned the project to design a small system to track the code size changes in Newlib and some benchmarks results. We uses Tableau as the front end to visualise quite a lot data. In such project, I wrote a Python script mainly generating a .csv file which contains all raw data required. Then another Python script to convert to the required JSON files for the data server. To be honest, there are quite lots of enhancement can be make for there python scripts.</p>
-<h2 id="Future"><a href="#Future" class="headerlink" title="Future"></a>Future</h2><p>New team and new project is waiting. Maybe more C++ working, even some SystemC. Not sure yet.</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://shinymimiq.github.io/2015/03/31/2015-Annual-Plan/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Tony Liu">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Keep Simple">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Keep Simple">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2015/03/31/2015-Annual-Plan/" class="post-title-link" itemprop="url">2015 Annual Plan</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">نُشر في</span>
-
-      <time title="أُنشأ: 2015-03-31 09:41:51" itemprop="dateCreated datePublished" datetime="2015-03-31T09:41:51+08:00">2015-03-31</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">عُدل في</span>
-      <time title="عُدل: 2023-05-24 15:02:42" itemprop="dateModified" datetime="2023-05-24T15:02:42+08:00">2023-05-24</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p><code>This article was originally written in January</code></p>
-<h2 id="Original-Plan"><a href="#Original-Plan" class="headerlink" title="Original Plan"></a>Original Plan</h2><p>It has been a half month past since the start of 2015. My plan for 2014 seems has been finished OKay, though there is an important one didn’t finished. Actually it’s my first time to review my annual plan, thus things should be getting better anyway.</p>
-<p>In 2014, the most cheerful achievement should be that I finally got an good offer for work: a small IT company with great products. Also before that I was survived from Imperial College! Yeah!</p>
-<p>Yes now I’m a software engineering, who will focusing on imporve and maintain compiler for our company. Thus this year’s reading list would add a lot technique books such as <em>Data Structures and Algorithm</em>, <em>C++ Primer</em>, <em>Code Complete</em>, <em>Compilers: Principles, Techniques &amp; Tools</em></p>
-<p>Besides, I shall work hard for the oppourtunity to rotation to UK, and keep hardworking, looking for time to prepare GRE maybe.</p>
-<p>That’s it.</p>
-<h2 id="Review-at-the-end-of-March"><a href="#Review-at-the-end-of-March" class="headerlink" title="Review at the end of March"></a>Review at the end of March</h2><h3 id="Changes-of-Learning-Target"><a href="#Changes-of-Learning-Target" class="headerlink" title="Changes of Learning Target:"></a>Changes of Learning Target:</h3><p><em>Compilers</em> This will be put in the low priority.<br><em>SystemC</em> Need more time on learning this.</p>
-<h3 id="Languages"><a href="#Languages" class="headerlink" title="Languages:"></a>Languages:</h3><p>Also I started to learn Japanese online, current plan is to take the exam on December or next year’s July, for level N2. Good luck to me.</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://shinymimiq.github.io/2015/03/30/Test-for-Img/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Tony Liu">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Keep Simple">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Keep Simple">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2015/03/30/Test-for-Img/" class="post-title-link" itemprop="url">Test for Img</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">نُشر في</span>
-
-      <time title="أُنشأ: 2015-03-30 20:29:42" itemprop="dateCreated datePublished" datetime="2015-03-30T20:29:42+08:00">2015-03-30</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">عُدل في</span>
-      <time title="عُدل: 2023-05-24 15:02:42" itemprop="dateModified" datetime="2023-05-24T15:02:42+08:00">2023-05-24</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="Image-display"><a href="#Image-display" class="headerlink" title="Image display"></a>Image display</h2><p>To use image in markdown, two things need to be done.</p>
-<ol>
-<li>There should be somewhere you can store the image online, here I choose Qiniu. </li>
-<li>Use the syntax <code>![some text]( /path/to/image.jpg &quot;image title&quot; )</code></li>
-</ol>
-<p>e.g.</p>
-<p><img src="http://mrtoniliu-imagespace.qiniudn.com/imgDesktop.jpeg" alt="Desktop" title="The Desktop"> </p>
-<p>Then it should work.</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://shinymimiq.github.io/2015/03/30/Testing/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Tony Liu">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Keep Simple">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Keep Simple">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2015/03/30/Testing/" class="post-title-link" itemprop="url">Testing</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">نُشر في</span>
-
-      <time title="أُنشأ: 2015-03-30 13:44:17" itemprop="dateCreated datePublished" datetime="2015-03-30T13:44:17+08:00">2015-03-30</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">عُدل في</span>
-      <time title="عُدل: 2023-05-24 15:02:42" itemprop="dateModified" datetime="2023-05-24T15:02:42+08:00">2023-05-24</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="Just-some-testing"><a href="#Just-some-testing" class="headerlink" title="Just some testing"></a>Just some testing</h2><p>This is a paragraph. More text here. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.</p>
-<p>Here are some code snippst: <code>var myname = &#39;Tony Liu&#39;;</code>, <code>#define age 24;</code></p>
-<p>More codes here:</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> n, first = <span class="number">0</span>, second = <span class="number">1</span>, next, c;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Enter the number of terms\n&quot;</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;n);</span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;First %d terms of Fibonacci series are :-\n&quot;</span>,n);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> ( c = <span class="number">0</span> ; c &lt; n ; c++ ) &#123;</span><br><span class="line">        <span class="keyword">if</span> ( c &lt;= <span class="number">1</span> )</span><br><span class="line">            next = c;</span><br><span class="line">        <span class="keyword">else</span> &#123;</span><br><span class="line">            next = first + second;</span><br><span class="line">            first = second;</span><br><span class="line">            second = next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,next);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>And for the math mode: $x^2+3x+1&#x3D;4$,</p>
-<p>Some more complicate ${n! \over k!(n-k)!} &#x3D; {n \choose k}$</p>
-<p>Production? Yes: $$\prod_{i&#x3D;0}^n \frac{1}{i^2}$$</p>
-<p>Limits? Yes: $$\lim_{n \rightarrow +\infty} \frac{1}{n(n+1)}$$</p>
-<p>However, it seems doesn’t support equations by default, need time to check how to enable it.</p>
-<h3 id="headings"><a href="#headings" class="headerlink" title="headings"></a>headings</h3><p><strong>Strong</strong>, <strong>Strong</strong></p>
-<p><del>Aha this need to be delete</del></p>
-<p>Oh should be some list:</p>
-<ul>
-<li>Hello world</li>
-<li>Print Integer</li>
-<li>Addtion</li>
-<li>Odd or Even</li>
-<li>Add, substract, multiply</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
 
 </div>
   </main>
@@ -759,7 +337,7 @@ Date:   Thu Apr 30 02:08:05 2015 +0000
   </span>
   <span class="author" itemprop="copyrightHolder">Tony Liu</span>
 </div>
-  <div class="powered-by">تطبيق الموقع <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
   </div>
 
     </div>
