@@ -8,7 +8,7 @@ title: Keep Simple
 description: ''
 keywords:
 author: Tony Liu
-language: default
+language: en-US
 timezone: 'Asia/Shanghai'
 
 # URL
@@ -93,7 +93,7 @@ pagination_dir: page
 # plugins:
 # - hexo-generator-feed
 ## Themes: http://hexo.io/themes/
-theme: minima
+theme: next
 
 # Social account
 social:
